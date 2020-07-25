@@ -20,37 +20,37 @@ if (question1 ==="yes"|| question1=== "y") {
   alert("Sorry that\'s wrong!")
 }
 
-var question1 = prompt("Do I enjoy Brazilian jiu jitsu?").toLowerCase();
-if (question1 ==="yes"|| question1=== "y") {
+var question2 = prompt("Do I enjoy Brazilian jiu jitsu?").toLowerCase();
+if (question2 ==="yes"|| question2=== "y") {
  //console.log("Correct, yes I do.")
   alert("Correct, yes I love bjj!")
-}else if(question1 === "no"){
+}else if(question2 === "no"){
   //console.log("Sorry that\'s wrong.")
   alert("Sorry that\'s wrong!")
 }
 
-var question1 = prompt("Do I have a dog?").toLowerCase();
-if (question1 ==="yes"|| question1=== "y") {
- //console.log("Correct, her name is Esia! .")
-  alert("Correct, her name is Esia!")
-}else if(question1 === "no"){
+var question3 = prompt("Do I have a dog?").toLowerCase();
+if (question3 ==="yes"|| question3=== "y") {
+ //console.log("Correct, her name is Eisa! .")
+  alert("Correct, her name is Eisa!")
+}else if(question3 === "no"){
   //console.log("Sorry that\'s wrong.")
   alert("Sorry that\'s wrong!")
 }
 
-var question1 = prompt("Do I enjoying trail running?").toLowerCase();
-if (question1 ==="yes"|| question1=== "y") {
- //console.log("Correct, yes, I love to get out on the trails with Esia!.")
-  alert("Correct, yes, I love to get out on the trails with Esia!")
-}else if(question1 === "no"){
+var question4 = prompt("Do I enjoying trail running?").toLowerCase();
+if (question4 ==="yes"|| question4=== "y") {
+ //console.log("Correct, yes, I love to get out on the trails with Eisa!.")
+  alert("Correct, yes, I love to get out on the trails with Eisa!")
+}else if(question4 === "no"){
   //console.log("Sorry that\'s wrong.")
   alert("Sorry that\'s wrong!")
 }
-var question1 = prompt("Is my favorite video game Skyrim?").toLowerCase();
-if (question1 ==="yes"|| question1=== "y") {
+var question5 = prompt("Is my favorite video game Skyrim?").toLowerCase();
+if (question5 ==="yes"|| question5=== "y") {
  //console.log("Correct, Of course it would be Skyrim, what else can compare!.")
   alert("Correct, of course it would be Skyrim, what else can compare!")
-}else if(question1 === "no"){
+}else if(question5 === "no"){
   //console.log("Sorry that\'s wrong.")
   alert("Sorry that\'s wrong!")
 }
