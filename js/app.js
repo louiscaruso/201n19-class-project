@@ -64,7 +64,7 @@ var answerSixCorrect = false;
 while (turns > 0) {
   var guess = prompt(hint +
     ' You have ' + turns + ' guesses left.');
-  if (!!guess) break;
+  if (!guess) break;
   guess = Number(guess);
   if (guess === x) {
     alert(`${x} is the correct number! Thanks for playing, ${username}`);
@@ -74,12 +74,12 @@ while (turns > 0) {
     hint = 'Let\'s try again!';
     //Indicates through an alert if the guess is “too high” or “too low"
     if (guess < x) {
-      hint += ' Too low!';
+      hint += ` Too low! ${turns--}`;
     }
     if (guess > x) {
-      hint += ' Too high!';
+      hint += ` Too high! ${turns--}`;
     }
-    turns--;
+   
   }
 }//After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
 if (answerSixCorrect === false) {
