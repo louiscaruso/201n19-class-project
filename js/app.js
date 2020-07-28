@@ -69,7 +69,7 @@ var turns = 4;
 var hint = 'How many countries have I been too, 1-10!';
 var answeredSixCorrect = false;
 while (turns > 0) {
-  var guess = Number(prompt(`${hint} You have ${turns} guesses left.`));
+  var guess = Number(prompt(`${hint} guesses left, keep at!`));
   turns--;
   if (guess === correctAnswer) {
     alert(`${correctAnswer} is the correct number! Thanks for playing, ${username}`);
@@ -100,7 +100,7 @@ var answerArray = ['spain', 'canada', 'oman', 'yemen', 'bahrain', 'israel'];
 var answerCorrect = false;
 
 while (remainingTurns > 0) {
-  var guess7 = prompt(`${question7} You have remainingTurns guesses left.`).toLowerCase();
+  var guess7 = prompt(`${question7} You have ${remainingTurns} guesses left.`).toLowerCase();
   remainingTurns--;
 
   for (var i = 0; i < answerArray.length; i++) {
@@ -112,7 +112,7 @@ while (remainingTurns > 0) {
     }
   }
   question7 = 'Let\'s try again!';
-  question7 += 'Guess again!';
+  question7 += ' Guess again!';
 }
 
 //After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
