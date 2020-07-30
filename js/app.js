@@ -55,15 +55,17 @@ function answer3() {
   }
 }
 
-// var question4 = prompt('Do I enjoying trail running?').toLowerCase();
-// if (question4 === 'yes' || question4 === 'y') {
-//   //console.log("Correct, yes, I love to get out on the trails with Eisa!.")
-//   alert('Correct, yes, I love to get out on the trails with Eisa!');
-//   score++;
-// } else if (question4 === 'no' || question4 === 'n') {
-//   //console.log("Sorry that\'s wrong.")
-//   alert('Sorry that\'s wrong!');
-// }
+function answer4() {
+  var question4 = prompt('Do I enjoying trail running?').toLowerCase();
+  if (question4 === 'yes' || question4 === 'y') {
+    //console.log("Correct, yes, I love to get out on the trails with Eisa!.")
+    alert('Correct, yes, I love to get out on the trails with Eisa!');
+    score++;
+  } else if (question4 === 'no' || question4 === 'n') {
+    //console.log("Sorry that\'s wrong.")
+    alert('Sorry that\'s wrong!');
+  }
+}
 
 // var question5 = prompt('Is my favorite video game Skyrim?').toLowerCase();
 // if (question5 === 'yes' || question5 === 'y') {
@@ -134,6 +136,8 @@ function answer3() {
 answer1();
 answer2();
 answer3();
+answer4();
+
 
 alert(`Here's your score ${score}`);
 // // The guesses will end once the user guesses a correct answer or they run out of attempts.
