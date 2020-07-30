@@ -1,9 +1,16 @@
 'use strict';
 
 var score = 0;
+
+
+
+
+var initialResponse = confirm('Are you ready to enter');
+
+
 // prompt to the user as they enter the page
-var answer1 = confirm('Are you ready to enter');
-if (answer1 === true) {
+
+if (initialResponse === true) {
   console.log('I hope you enjoy your time on my page!');
 } else {
   console.log('Another time perhaps.');
@@ -12,14 +19,16 @@ if (answer1 === true) {
 var username = prompt('What is your name?');
 alert(`Hello ${username} nice to meet you! `);
 
-var question1 = prompt('I am Marine?').toLowerCase();
-if (question1 === 'yes' || question1 === 'y'); {
-  //console.log("Correct, yes I am.")
-  alert('Correct, yes I am.');
-  score++;
-} if (question1 === 'no' || question1 === 'n') {
-  //console.log("Sorry that\'s wrong.")
-  alert('Sorry that\'s wrong!');
+function answer1() {
+  var question1 = prompt('I am Marine?').toLowerCase();
+  if (question1 === 'yes' || question1 === 'y'); {
+    //console.log("Correct, yes I am.")
+    alert('Correct, yes I am.');
+    score++;
+  } if (question1 === 'no' || question1 === 'n') {
+    //console.log("Sorry that\'s wrong.")
+    alert('Sorry that\'s wrong!');
+  }
 }
 
 var question2 = prompt('Do I enjoy Brazilian jiu jitsu?').toLowerCase();
@@ -117,6 +126,9 @@ while (remainingTurns > 0) {
 if (answerCorrect === false) {
   alert(`The correct answers are spain, canada, oman, yemen, bahrain, israel you are out of guesses. Thanks for playing, ${username}`);
 }// Display all the possible correct answers to the user.
+
+answer1();
+
 alert(`Here's your score ${score}`);
 // The guesses will end once the user guesses a correct answer or they run out of attempts.
 
