@@ -43,15 +43,17 @@ function answer2() {
   }
 }
 
-// var question3 = prompt('Do I have a dog?').toLowerCase();
-// if (question3 === 'yes' || question3 === 'y') {
-//   //console.log("Correct, her name is Eisa! .")
-//   alert('Correct, her name is Eisa!');
-//   score++;
-// } else if (question3 === 'no' || question3 === 'n') {
-//   //console.log("Sorry that\'s wrong.")
-//   alert('Sorry that\'s wrong!');
-// }
+function answer3() {
+  var question3 = prompt('Do I have a dog?').toLowerCase();
+  if (question3 === 'yes' || question3 === 'y') {
+    //console.log("Correct, her name is Eisa! .")
+    alert('Correct, her name is Eisa!');
+    score++;
+  } else if (question3 === 'no' || question3 === 'n') {
+    //console.log("Sorry that\'s wrong.")
+    alert('Sorry that\'s wrong!');
+  }
+}
 
 // var question4 = prompt('Do I enjoying trail running?').toLowerCase();
 // if (question4 === 'yes' || question4 === 'y') {
@@ -131,6 +133,7 @@ function answer2() {
 
 answer1();
 answer2();
+answer3();
 
 alert(`Here's your score ${score}`);
 // // The guesses will end once the user guesses a correct answer or they run out of attempts.
