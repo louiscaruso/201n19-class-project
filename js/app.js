@@ -112,25 +112,27 @@ function answer6() {
   }
 }
 
-// //Add a 7th question that has multiple possible correct answers that are stored in an array.
-// var remainingTurns = 6;
-// var question7 = 'Which countries have I been too?';
-// var answerArray = ['spain', 'canada', 'oman', 'yemen', 'bahrain', 'israel'];
-// var answerCorrect = false;
+function answer7() {
+  //Add a 7th question that has multiple possible correct answers that are stored in an array.
+  var remainingTurns = 6;
+  var question7 = 'Which countries have I been too?';
+  var answerArray = ['spain', 'canada', 'oman', 'yemen', 'bahrain', 'israel'];
+  var answerCorrect = false;
 
-// while (remainingTurns > 0) {
-//   var guess7 = prompt(`${question7} You have ${remainingTurns} guesses left.`).toLowerCase();
-//   remainingTurns--;
+  while (remainingTurns > 0) {
+    var guess7 = prompt(`${question7} You have ${remainingTurns} guesses left.`).toLowerCase();
+    remainingTurns--;
 
-//   for (var i = 0; i < answerArray.length; i++) {
-//     if (guess7 === answerArray[i]) {
-//       alert(`${answerArray[i]} is a correct answer! Thanks for playing, ${username}`);
-//       remainingTurns = 0;
-//       answerCorrect = true;
-//       score++;
-//     }
-//   }
-// }
+    for (var i = 0; i < answerArray.length; i++) {
+      if (guess7 === answerArray[i]) {
+        alert(`${answerArray[i]} is a correct answer! Thanks for playing, ${username}`);
+        remainingTurns = 0;
+        answerCorrect = true;
+        score++;
+      }
+    }
+  }
+}
 
 // //After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
 // if (answerCorrect === false) {
@@ -143,7 +145,7 @@ answer3();
 answer4();
 answer5();
 answer6();
-
+answer7();
 
 alert(`Here's your score ${score}`);
 // // The guesses will end once the user guesses a correct answer or they run out of attempts.
