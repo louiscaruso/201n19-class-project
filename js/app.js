@@ -111,8 +111,6 @@ while (remainingTurns > 0) {
       score++;
     }
   }
-  question7 = 'Let\'s try again!';
-  question7 += ' Guess again!';
 }
 
 //After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
