@@ -67,46 +67,50 @@ function answer4() {
   }
 }
 
-// var question5 = prompt('Is my favorite video game Skyrim?').toLowerCase();
-// if (question5 === 'yes' || question5 === 'y') {
-//   //console.log("Correct, Of course it would be Skyrim, what else can compare!.")
-//   alert('Correct, of course it would be Skyrim, what else can compare!');
-//   score++;
-// } else if (question5 === 'no' || question5 === 'n') {
-//   //console.log("Sorry that\'s wrong.")
-//   alert('Sorry that\'s wrong!');
-// }
+function answer5() {
+  var question5 = prompt('Is my favorite video game Skyrim?').toLowerCase();
+  if (question5 === 'yes' || question5 === 'y') {
+    //console.log("Correct, Of course it would be Skyrim, what else can compare!.")
+    alert('Correct, of course it would be Skyrim, what else can compare!');
+    score++;
+  } else if (question5 === 'no' || question5 === 'n') {
+    //console.log("Sorry that\'s wrong.")
+    alert('Sorry that\'s wrong!');
+  }
+}
 
-// //Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number
-// var correctAnswer = 6;
-// //It should give the user exactly 4 opportunities to get the correct answer
-// var turns = 4;
-// var hint = 'How many countries have I been too, 1-10!';
-// var answeredSixCorrect = false;
-// while (turns > 0) {
-//   var guess = Number(prompt(`${hint} guesses left, keep at!`));
-//   turns--;
-//   if (guess === correctAnswer) {
-//     alert(`${correctAnswer} is the correct number! Thanks for playing, ${username}`);
-//     score++;
-//     turns = 0;
-//     answeredSixCorrect = true;
-//   } else {
-//     hint = 'Let\'s try again!';
-//     //Indicates through an alert if the guess is “too high” or “too low"
-//     if (guess < correctAnswer) {
-//       hint += ` Too low! ${turns}`;
-//     }
-//     if (guess > correctAnswer) {
-//       hint += ` Too high! ${turns}`;
-//     }
-//   }
-// }
+function answer6() {
+  //Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number
+  var correctAnswer = 6;
+  //It should give the user exactly 4 opportunities to get the correct answer
+  var turns = 4;
+  var hint = 'How many countries have I been too, 1-10!';
+  var answeredSixCorrect = false;
+  while (turns > 0) {
+    var guess = Number(prompt(`${hint} guesses left, keep at!`));
+    turns--;
+    if (guess === correctAnswer) {
+      alert(`${correctAnswer} is the correct number! Thanks for playing, ${username}`);
+      score++;
+      turns = 0;
+      answeredSixCorrect = true;
+    } else {
+      hint = 'Let\'s try again!';
+      //Indicates through an alert if the guess is “too high” or “too low"
+      if (guess < correctAnswer) {
+        hint += ` Too low! ${turns}`;
+      }
+      if (guess > correctAnswer) {
+        hint += ` Too high! ${turns}`;
+      }
+    }
+  }
 
-// //After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
-// if (answeredSixCorrect === false) {
-//   alert(`${correctAnswer} is the correct number you are out of guesses. Thanks for playing, ${username}`);
-// }
+  //After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
+  if (answeredSixCorrect === false) {
+    alert(`${correctAnswer} is the correct number you are out of guesses. Thanks for playing, ${username}`);
+  }
+}
 
 // //Add a 7th question that has multiple possible correct answers that are stored in an array.
 // var remainingTurns = 6;
@@ -137,6 +141,8 @@ answer1();
 answer2();
 answer3();
 answer4();
+answer5();
+answer6();
 
 
 alert(`Here's your score ${score}`);
