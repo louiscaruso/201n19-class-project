@@ -82,6 +82,11 @@ body, html{
 .ptext .border.trans{
   background-color:transparent;
 }
+ol {
+  list-style: upper-roman; 
+  list-style-position: inside;
+  
+}
 
 @media(max-width:568px){
   .pimg1, .pimg2, .pimg3{

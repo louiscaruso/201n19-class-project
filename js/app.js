@@ -132,12 +132,11 @@ function answer7() {
       }
     }
   }
+  //After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
+  if (answerCorrect === false) {
+    alert(`The correct answers are spain, canada, oman, yemen, bahrain, israel you are out of guesses. Thanks for playing, ${username}`);
+  }// Display all the possible correct answers to the user.
 }
-
-// //After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
-// if (answerCorrect === false) {
-//   alert(`The correct answers are spain, canada, oman, yemen, bahrain, israel you are out of guesses. Thanks for playing, ${username}`);
-// }// Display all the possible correct answers to the user.
 
 answer1();
 answer2();
