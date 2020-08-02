@@ -22,11 +22,11 @@ alert(`Hello ${username} nice to meet you! `);
 function answer1() {
   var question1 = prompt('I am Marine?').toLowerCase();
   if (question1 === 'yes' || question1 === 'y'); {
-    //console.log("Correct, yes I am.")
+    console.log('Correct, yes I am.');
     alert('Correct, yes I am.');
     score++;
   } if (question1 === 'no' || question1 === 'n') {
-    //console.log("Sorry that\'s wrong.")
+    console.log('Sorry that\'s wrong.');
     alert('Sorry that\'s wrong!');
   }
 }
@@ -34,11 +34,11 @@ function answer1() {
 function answer2() {
   var question2 = prompt('Do I enjoy Brazilian jiu jitsu?').toLowerCase();
   if (question2 === 'yes' || question2 === 'y') {
-    //console.log("Correct, yes I do.")
+    console.log('Correct, yes I do.');
     alert('Correct, yes I love bjj!');
     score++;
   } else if (question2 === 'no' || question2 === 'n') {
-    //console.log("Sorry that\'s wrong.")
+    console.log('Sorry that\'s wrong.');
     alert('Sorry that\'s wrong!');
   }
 }
@@ -46,11 +46,11 @@ function answer2() {
 function answer3() {
   var question3 = prompt('Do I have a dog?').toLowerCase();
   if (question3 === 'yes' || question3 === 'y') {
-    //console.log("Correct, her name is Eisa! .")
+    console.log('Correct, her name is Eisa! .');
     alert('Correct, her name is Eisa!');
     score++;
   } else if (question3 === 'no' || question3 === 'n') {
-    //console.log("Sorry that\'s wrong.")
+    console.log('Sorry that\'s wrong.');
     alert('Sorry that\'s wrong!');
   }
 }
@@ -58,11 +58,11 @@ function answer3() {
 function answer4() {
   var question4 = prompt('Do I enjoying trail running?').toLowerCase();
   if (question4 === 'yes' || question4 === 'y') {
-    //console.log("Correct, yes, I love to get out on the trails with Eisa!.")
+    console.log('Correct, yes, I love to get out on the trails with Eisa!.');
     alert('Correct, yes, I love to get out on the trails with Eisa!');
     score++;
   } else if (question4 === 'no' || question4 === 'n') {
-    //console.log("Sorry that\'s wrong.")
+    console.log('Sorry that\'s wrong.');
     alert('Sorry that\'s wrong!');
   }
 }
@@ -70,11 +70,11 @@ function answer4() {
 function answer5() {
   var question5 = prompt('Is my favorite video game Skyrim?').toLowerCase();
   if (question5 === 'yes' || question5 === 'y') {
-    //console.log("Correct, Of course it would be Skyrim, what else can compare!.")
+    console.log('Correct, Of course it would be Skyrim, what else can compare!.');
     alert('Correct, of course it would be Skyrim, what else can compare!');
     score++;
   } else if (question5 === 'no' || question5 === 'n') {
-    //console.log("Sorry that\'s wrong.")
+    console.log('Sorry that\'s wrong.');
     alert('Sorry that\'s wrong!');
   }
 }
@@ -148,21 +148,6 @@ answer7();
 
 alert(`Here's your score ${score}`);
 // // The guesses will end once the user guesses a correct answer or they run out of attempts.
-
-// // // function greeting() {
-// // //   var today = new Date();
-// // //   var hourNow = today.getHours();
-// // //   var greeting;
-// // //   if (hourNow > 18) {
-// // //     greeting = 'Good Evening!';
-// // //   } else if (hourNow > 12) {
-// // //     greeting = 'Good Afternoon!';
-// // //   } else if (hourNow > 0) {
-// // //     greeting = 'Good Morning!';
-// // //   } else {
-// // //     greeting = 'Welcome traveler!';
-// // //   }
-// // //   return document.write('<h3>' + greeting + '</h3>');
 
 
 
