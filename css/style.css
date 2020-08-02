@@ -14,12 +14,11 @@ body, html{
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
-
-  /*
+  background-attachment:fixed;
+    /*
     fixed = parallax
     scroll = normal
   */
-  background-attachment:fixed;
 }
 .pimg1{
   background-image:url('/img/marines-picture.jpg');

@@ -116,7 +116,7 @@ function answer7() {
   //Add a 7th question that has multiple possible correct answers that are stored in an array.
   var remainingTurns = 6;
   var question7 = 'Which countries have I been too?';
-  var answerArray = ['spain', 'canada', 'oman', 'yemen', 'bahrain', 'israel'];
+  var answerArray = ['Spain', ' Canada', ' Oman', ' Yemen', ' Bahrain', ' Israel'];
   var answerCorrect = false;
 
   while (remainingTurns > 0) {
@@ -125,7 +125,7 @@ function answer7() {
 
     for (var i = 0; i < answerArray.length; i++) {
       if (guess7 === answerArray[i]) {
-        alert(`${answerArray[i]} is a correct answer! Thanks for playing, ${username}`);
+        alert(`${answerArray} is a correct answer! Thanks for playing, ${username}`);
         remainingTurns = 0;
         answerCorrect = true;
         score++;
@@ -149,20 +149,20 @@ answer7();
 alert(`Here's your score ${score}`);
 // // The guesses will end once the user guesses a correct answer or they run out of attempts.
 
-// // function greeting() {
-// //   var today = new Date();
-// //   var hourNow = today.getHours();
-// //   var greeting;
-// //   if (hourNow > 18) {
-// //     greeting = 'Good Evening!';
-// //   } else if (hourNow > 12) {
-// //     greeting = 'Good Afternoon!';
-// //   } else if (hourNow > 0) {
-// //     greeting = 'Good Morning!';
-// //   } else {
-// //     greeting = 'Welcome traveler!';
-// //   }
-// //   return document.write('<h3>' + greeting + '</h3>');
+// // // function greeting() {
+// // //   var today = new Date();
+// // //   var hourNow = today.getHours();
+// // //   var greeting;
+// // //   if (hourNow > 18) {
+// // //     greeting = 'Good Evening!';
+// // //   } else if (hourNow > 12) {
+// // //     greeting = 'Good Afternoon!';
+// // //   } else if (hourNow > 0) {
+// // //     greeting = 'Good Morning!';
+// // //   } else {
+// // //     greeting = 'Welcome traveler!';
+// // //   }
+// // //   return document.write('<h3>' + greeting + '</h3>');
 
 
 
