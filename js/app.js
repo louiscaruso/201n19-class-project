@@ -87,7 +87,7 @@ function answer6() {
   var hint = 'How many countries have I been too, 1-10!';
   var answeredSixCorrect = false;
   while (turns > 0) {
-    var guess = Number(prompt(`${hint} guesses left, keep at!`));
+    var guess = Number(prompt(`${hint} ${turns} guesses left, keep at it!`));
     turns--;
     if (guess === correctAnswer) {
       alert(`${correctAnswer} is the correct number! Thanks for playing, ${username}`);
@@ -98,10 +98,10 @@ function answer6() {
       hint = 'Let\'s try again!';
       //Indicates through an alert if the guess is “too high” or “too low"
       if (guess < correctAnswer) {
-        hint += ` Too low! ${turns}`;
+        hint += ' Too low! ';
       }
       if (guess > correctAnswer) {
-        hint += ` Too high! ${turns}`;
+        hint += ' Too high! ';
       }
     }
   }
@@ -116,20 +116,19 @@ function answer7() {
   //Add a 7th question that has multiple possible correct answers that are stored in an array.
   var remainingTurns = 6;
   var question7 = 'Which countries have I been too?';
-  var answerArray = ['Spain', ' Canada', ' Oman', ' Yemen', ' Bahrain', ' Israel'];
+  var answerArray = ['canada', 'spain', 'oman', 'yemen', 'bahrain', 'israel'];
   var answerCorrect = false;
 
-  while (remainingTurns > 0) {
+  while (remainingTurns > 0 && !answerCorrect) {
     var guess7 = prompt(`${question7} You have ${remainingTurns} guesses left.`).toLowerCase();
     remainingTurns--;
-
-    for (var i = 0; i < answerArray.length; i++) {
-      if (guess7 === answerArray[i]) {
-        alert(`${answerArray} is a correct answer! Thanks for playing, ${username}`);
-        remainingTurns = 0;
-        answerCorrect = true;
-        score++;
-      }
+    console.log(guess7);
+    if (answerArray.includes(guess7)) {
+      alert(`${answerArray[0]}, ${answerArray[1]}, ${answerArray[2]}, ${answerArray[3]}, ${answerArray[4]}, ${answerArray[5]} is a correct answer! Thanks for playing, ${username}`);
+      remainingTurns = 0;
+      answerCorrect = true;
+      score++;
+      break;
     }
   }
   //After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
