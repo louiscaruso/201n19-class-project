@@ -21,27 +21,27 @@ body, html{
   */
 }
 .pimg1{
-  background-image:url('/img/marines-picture.jpg');
+  background-image:url('../img/marines-picture.jpg');
   height: 400px;
  
 }
 
 .pimg2{
-  background-image:url('/img/marine-civlian.jpg');
+  background-image:url('../img/marine-civlian.jpg');
   height: 400px;
  
 }
 
 .pimg3{
   min-height:400px;
-  background-image:url('/img/commercial-diver.jpg');
+  background-image:url('../img/commercial-diver.jpg');
   
  
   
 }
 
 .pimg4{
-  background-image:url('/img/iceland-cave.jpg');
+  background-image:url('../img/iceland-cave.jpg');
   min-height:400px;
 }
 
